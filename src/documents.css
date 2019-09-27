@@ -1,0 +1,43 @@
+/* TODO: disabled styles? */
+
+.documents{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    /* TODO: Should this be here? */
+    font-family: arial;
+}
+
+.documents > li{
+    padding: 2rem;
+    display: block;
+    border: 1px solid #E5E5E5;
+    background-color: #fafafa;
+    margin-right: 2rem;
+    border-radius: 0.2rem;
+}
+
+.documents > li:last-child{
+    margin-right: 0;
+}
+
+.documents > li > a{
+    border-radius: 0.2rem;
+    display: block;
+    margin: -2rem;
+    padding: 2rem;
+    color: #266c9a;
+}
+
+.documents > li > a:hover, .documents > li > a:active {
+    box-shadow: 0 0 0 1px #B5D7ED;
+    background-color: #EEF8FF;
+    cursor: pointer;
+}
+
+.documents > li > a:active {
+    /* TODO: Fix redundans */
+    box-shadow: 0 0 0 1px #B5D7ED, 0 3px 5px 5px rgba(181, 215, 237, 0.5) inset;
+}
