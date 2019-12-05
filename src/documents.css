@@ -11,39 +11,39 @@
 }
 
 .documents > li {
-    display: flex;
-    padding: 2rem;
-    border: 1px solid #E5E5E5;
-    background-color: #fafafa;
     margin-right: 2rem;
-    border-radius: 0.2rem;
-    width: 5rem;
-    text-align: center;
 }
 
-.documents > li:last-child{
+.documents > li:last-child {
     margin-right: 0;
 }
 
 .documents > li > a {
+    box-sizing: border-box;
+    display: block;
+    background-color: #fafafa;
+    border: 1px solid #E5E5E5;
     border-radius: 0.2rem;
-    margin: -2rem;
-    padding: 2rem;
+    text-align: center;
+    padding: 4.5rem 2rem 2rem;
+    border-radius: 0.2rem;
     color: #266c9a;
+    width: 11rem;
+    height: 14rem;
 }
 
 .documents > li > a:hover, .documents > li > a:active {
-    box-shadow: 0 0 0 1px #B5D7ED;
+    border: 1px solid #B5D7ED;
     background-color: #EEF8FF;
     cursor: pointer;
 }
 
 .documents > li > a:active {
     /* TODO: Fix redundans */
-    box-shadow: 0 0 0 1px #B5D7ED, 0 3px 5px 5px rgba(181, 215, 237, 0.5) inset;
+    box-shadow: 0 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1) inset;
 }
 
-.documents > li > a:before {
+.documents > li> a:before {
     content: "";
     background-image: url(document-lines.svg);
     background-repeat: no-repeat;
@@ -51,6 +51,9 @@
     background-color: #266C9A;
     border-radius: 3px;
     display: block;
+    margin-right: auto;
+    margin-left: auto;
     width: 2rem;
     height: 2.5rem;
+    margin-bottom: 1rem;
 }
